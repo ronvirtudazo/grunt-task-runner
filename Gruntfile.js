@@ -23,7 +23,7 @@ module.exports = function(grunt) {
       config: {app: 'app',dist: 'dist'},
       open: {
             app: {
-                path: 'http://<%= connect.options.hostname %>:<%= connect.options.port %>/index.php'
+                path: 'http://<%= connect.options.hostname %>:<%= connect.options.port %>/index.html'
             }
         },
         connect: {
@@ -37,14 +37,28 @@ module.exports = function(grunt) {
                     middleware: function (connect) {
                         return [
                             lrSnippet,
-                            gateway(__dirname + path.sep + config.app, {
-                                '.php': 'php-cgi'
-                            }),
+                            // gateway(__dirname + path.sep + config.app, {
+                            //     '.php': 'php-cgi'
+                            // }),
                             mountFolder(connect, config.app)
                         ];
                     }
                 }
             }
+        },
+        compass: { // Task
+            dev: {
+                options: {
+                    sassDir: '<%= config.app %>/assets/sass/',
+                    cssDir: '<%= config.app %>/assets/css/',
+                    imagesDir: '<%= config.app %>/assets/img/',
+                    javascriptsDir: '<%= config.app %>/assets/js/',
+                    fontsDir: '<%= config.app %>/assets/fonts/',
+                    relativeAssets: true,
+                    environment: 'development'
+                }
+            }
+
         },
         watch: {
             options: {
@@ -54,13 +68,19 @@ module.exports = function(grunt) {
                 },
                 livereload: true
             },
+            comp: {
+                files: '<%= config.app %>/assets/sass/*.scss',
+                tasks: ['compass'],
+                options: {
+                    spawn: false
+                }
+            },
             livereload: {
               options: {
                   livereload: LIVERELOAD_PORT
               },
               files: [
                   '<%= config.app %>/{,*/}*.html',
-                  '<%= config.app %>/{,*/}*.php',
                   '<%= config.app %>/assets/sass/*.scss',
                   '<%= config.app %>/assets/less/*.less',
                   '<%= config.app %>/assets/js/*.js',
@@ -71,7 +91,7 @@ module.exports = function(grunt) {
 
   });
 
-    grunt.registerTask('default', ['connect','open','watch']);
+    grunt.registerTask('default', ['connect','compass','open','watch']);
  
 
 };
