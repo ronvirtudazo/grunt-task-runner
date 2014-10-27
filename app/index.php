@@ -3,7 +3,6 @@
 	<title>Testing Grunt Task Runner</title>
 </head>
 <body>
-	<a href="about.php">About</a>
-asdfdasf  sdafadsf
+	<a href="about.php">About</a> Yi Yeah!!!
 </body>
 </html>

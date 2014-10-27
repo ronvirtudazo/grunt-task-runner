@@ -20,7 +20,7 @@ module.exports = function(grunt) {
 
   grunt.initConfig({
 
-      config: config,
+      config: {app: 'app',dist: 'dist'},
       open: {
             app: {
                 path: 'http://<%= connect.options.hostname %>:<%= connect.options.port %>/index.php'
