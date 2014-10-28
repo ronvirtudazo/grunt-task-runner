@@ -1,10 +1,16 @@
 @import "reset";
 
+body{
+    padding-top: 120px;
+}
+ 
 nav{
     width: 100%;
     height: 120px;
     box-shadow: 0 0 15px #ddd;
     position: fixed;
+    z-index: 10;
+    top:0;
     background-color: #fff;
 
     .logo{
@@ -34,11 +40,10 @@ nav{
 
 .sub_navigation{
 	position: relative;
-	width: 100%;
- 	top: 125px;
+ 	width: 100%;
  	padding: 10px 10px;
  	text-align: center;
-	ul{
+ 	ul{
 		li{
 			display: inline;
 			padding: 10px 10px;
@@ -47,10 +52,12 @@ nav{
 }
 
 section{
-	position: relative;
-	width: 100%;
+	position: static;
+ 	width: 100%;
 	min-height: 600px;
 	border: 1px red solid;
+    background-color: #ddd;
+
 }
 
 

@@ -56,28 +56,35 @@ table {
 }
 
 /* line 3, ../sass/main.scss */
+body {
+  padding-top: 120px;
+}
+
+/* line 7, ../sass/main.scss */
 nav {
   width: 100%;
   height: 120px;
   box-shadow: 0 0 15px #ddd;
   position: fixed;
+  z-index: 10;
+  top: 0;
   background-color: #fff;
 }
-/* line 10, ../sass/main.scss */
+/* line 16, ../sass/main.scss */
 nav .logo {
   float: left;
   padding: 32px 0 0 175px;
 }
-/* line 14, ../sass/main.scss */
+/* line 20, ../sass/main.scss */
 nav ul {
   float: right;
   padding: 32px 175px 0 0;
 }
-/* line 17, ../sass/main.scss */
+/* line 23, ../sass/main.scss */
 nav ul li {
   float: left;
 }
-/* line 19, ../sass/main.scss */
+/* line 25, ../sass/main.scss */
 nav ul li a {
   text-decoration: none;
   color: #000;
@@ -85,34 +92,34 @@ nav ul li a {
   display: block;
   font-size: 14px;
 }
-/* line 27, ../sass/main.scss */
+/* line 33, ../sass/main.scss */
 nav ul li :hover {
   text-decoration: underline;
 }
 
-/* line 35, ../sass/main.scss */
+/* line 41, ../sass/main.scss */
 .sub_navigation {
   position: relative;
   width: 100%;
-  top: 125px;
   padding: 10px 10px;
   text-align: center;
 }
-/* line 42, ../sass/main.scss */
+/* line 47, ../sass/main.scss */
 .sub_navigation ul li {
   display: inline;
   padding: 10px 10px;
 }
 
-/* line 49, ../sass/main.scss */
+/* line 54, ../sass/main.scss */
 section {
-  position: relative;
+  position: static;
   width: 100%;
   min-height: 600px;
   border: 1px red solid;
+  background-color: #ddd;
 }
 
-/* line 57, ../sass/main.scss */
+/* line 64, ../sass/main.scss */
 .clear {
   clear: both;
 }
