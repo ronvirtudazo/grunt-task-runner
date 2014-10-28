@@ -39,6 +39,7 @@ nav{
  	width: 100%;
   	text-align: center;
     margin-top: 120px;
+    padding: 30px 0;
  	ul{
 		li{
 			display: inline;
@@ -47,14 +48,65 @@ nav{
 	}
 }
 
-section{
-	position: static;
- 	width: 100%;
-	min-height: 600px;
-    background-color: #ddd;
+.grid-container{
+  	width: 100%;
+    border: 1px solid green;
+
+    .row{
+        
+        :before,:after{
+            content:"";
+            display: table;
+            clear: both;
+        }
+
+        [class*='col-'] {
+            float: left;
+            min-height: 1px;
+            width: 16.66%; 
+        } 
+
+         .col-1{
+            width: 16.66%; 
+        }
+        .col-2{
+            width: 33.33%; 
+        }
+        .col-3{
+            width: 50%; 
+        }
+        .col-4{
+            width: 66.664%;
+        }
+        .col-5{
+            width: 83.33%;
+        }
+        .col-6{
+            width: 100%;
+        }
+
+
+    }
+
+    
+}
+
+.footer{
+    display: block;
+    width: 100%;
+    position: relative;
 }
 
 
-.clear{
-	clear: both;
+.blue{
+    background-color: blue;
+    border: 1px solid black;
+}
+
+.green{
+    background-color: green;
+}
+
+.red{
+    background-color: red;
 }
