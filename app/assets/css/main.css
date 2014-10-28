@@ -96,26 +96,24 @@ nav ul li :hover {
 .sub_navigation {
   position: relative;
   width: 100%;
-  padding: 10px 10px;
   text-align: center;
   margin-top: 120px;
 }
-/* line 44, ../sass/main.scss */
+/* line 43, ../sass/main.scss */
 .sub_navigation ul li {
   display: inline;
   padding: 10px 10px;
 }
 
-/* line 51, ../sass/main.scss */
+/* line 50, ../sass/main.scss */
 section {
   position: static;
   width: 100%;
   min-height: 600px;
-  border: 1px red solid;
   background-color: #ddd;
 }
 
-/* line 60, ../sass/main.scss */
+/* line 58, ../sass/main.scss */
 .clear {
   clear: both;
 }
