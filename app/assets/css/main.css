@@ -58,41 +58,51 @@ table {
 /* line 3, ../sass/main.scss */
 nav {
   width: 100%;
-  height: 120px;
   box-shadow: 0 0 15px #ddd;
   position: fixed;
   z-index: 10;
   background-color: #fff;
   top: 0;
+  padding: 30px 0 30px 0;
 }
 /* line 12, ../sass/main.scss */
-nav .logo {
-  float: left;
-  padding: 32px 0 0 175px;
+nav .row {
+  width: 75%;
+  outline: 1px solid #000;
+  margin: 0 auto;
+  position: relative;
+  padding: 5px;
 }
-/* line 16, ../sass/main.scss */
-nav ul {
+/* line 20, ../sass/main.scss */
+nav .row h2 {
+  position: relative;
+  outline: 1px #000 solid;
+  display: inline-block;
+  padding: 20px;
+}
+/* line 27, ../sass/main.scss */
+nav .row ul {
+  position: relative;
+  display: inline-block;
   float: right;
-  padding: 32px 175px 0 0;
 }
-/* line 19, ../sass/main.scss */
-nav ul li {
-  float: left;
+/* line 32, ../sass/main.scss */
+nav .row ul li {
+  display: inline-block;
+  outline: 1px #000 solid;
 }
-/* line 21, ../sass/main.scss */
-nav ul li a {
+/* line 35, ../sass/main.scss */
+nav .row ul li a {
   text-decoration: none;
-  color: #000;
-  padding: 10px 10px;
   display: block;
-  font-size: 14px;
+  padding: 20px;
 }
-/* line 29, ../sass/main.scss */
-nav ul li :hover {
-  text-decoration: underline;
+/* line 40, ../sass/main.scss */
+nav .row ul li :hover {
+  background-color: blue;
 }
 
-/* line 37, ../sass/main.scss */
+/* line 54, ../sass/main.scss */
 .sub_navigation {
   position: relative;
   width: 100%;
@@ -100,73 +110,83 @@ nav ul li :hover {
   margin-top: 120px;
   padding: 30px 0;
 }
-/* line 44, ../sass/main.scss */
+/* line 61, ../sass/main.scss */
 .sub_navigation ul li {
   display: inline;
-  padding: 10px 10px;
+  padding: 10px;
+}
+/* line 64, ../sass/main.scss */
+.sub_navigation ul li a {
+  text-decoration: none;
+}
+/* line 68, ../sass/main.scss */
+.sub_navigation ul li :hover {
+  text-decoration: underline;
 }
 
-/* line 51, ../sass/main.scss */
+/* line 76, ../sass/main.scss */
 .grid-container {
-  width: 100%;
-  border: 1px solid green;
+  width: 70%;
+  margin: 0 auto;
 }
-/* line 57, ../sass/main.scss */
-.grid-container .row :before, .grid-container .row :after {
+/* line 82, ../sass/main.scss */
+.grid-container .row .col {
+  float: left;
+  min-height: 1px;
+  width: 47%;
+  padding: 10px 5px;
+  background-color: #fff;
+}
+/* line 89, ../sass/main.scss */
+.grid-container .row .col img {
+  max-width: 100%;
+  margin: 0 auto;
+  display: block;
+}
+/* line 96, ../sass/main.scss */
+.grid-container .row p {
+  text-align: center;
+  padding: 5px;
+}
+/* line 104, ../sass/main.scss */
+.grid-container .row:before,
+.grid-container .row:after {
   content: "";
   display: table;
   clear: both;
 }
-/* line 63, ../sass/main.scss */
-.grid-container .row [class*='col-'] {
-  float: left;
-  min-height: 1px;
-  width: 16.66%;
-}
-/* line 69, ../sass/main.scss */
-.grid-container .row .col-1 {
-  width: 16.66%;
-}
-/* line 72, ../sass/main.scss */
-.grid-container .row .col-2 {
-  width: 33.33%;
-}
-/* line 75, ../sass/main.scss */
-.grid-container .row .col-3 {
-  width: 50%;
-}
-/* line 78, ../sass/main.scss */
-.grid-container .row .col-4 {
-  width: 66.664%;
-}
-/* line 81, ../sass/main.scss */
-.grid-container .row .col-5 {
-  width: 83.33%;
-}
-/* line 84, ../sass/main.scss */
-.grid-container .row .col-6 {
-  width: 100%;
+
+/* line 114, ../sass/main.scss */
+.outline, .outline * {
+  outline: 1px solid #000;
 }
 
-/* line 94, ../sass/main.scss */
-.footer {
-  display: block;
+/* line 118, ../sass/main.scss */
+footer {
+  padding: 20px 0;
   width: 100%;
-  position: relative;
+  background-color: #000;
+  color: #fff;
+  text-align: center;
 }
 
-/* line 101, ../sass/main.scss */
+/* line 127, ../sass/main.scss */
 .blue {
   background-color: blue;
   border: 1px solid black;
 }
 
-/* line 106, ../sass/main.scss */
+/* line 132, ../sass/main.scss */
 .green {
   background-color: green;
 }
 
-/* line 110, ../sass/main.scss */
+/* line 136, ../sass/main.scss */
 .red {
   background-color: red;
+}
+
+/* line 140, ../sass/main.scss */
+.clear {
+  clear: both;
 }
