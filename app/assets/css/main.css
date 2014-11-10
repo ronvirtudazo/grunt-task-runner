@@ -55,7 +55,24 @@ table {
   border-spacing: 0;
 }
 
-/* line 3, ../sass/main.scss */
+@font-face {
+  font-family: 'Quicksand-Regular';
+  src: url("../fonts/Quicksand-Regular.otf");
+  font-weight: normal;
+  font-style: normal;
+}
+/* line 17, ../sass/main.scss */
+body {
+  font-family: "Quicksand-Regular";
+}
+
+@media only screen and (max-device-width: 480px) {
+  /* line 22, ../sass/main.scss */
+  .logo {
+    display: none;
+  }
+}
+/* line 27, ../sass/main.scss */
 nav {
   width: 100%;
   box-shadow: 0 0 15px #ddd;
@@ -65,7 +82,7 @@ nav {
   top: 0;
   padding: 30px 0 30px 0;
 }
-/* line 12, ../sass/main.scss */
+/* line 36, ../sass/main.scss */
 nav .row {
   width: 75%;
   outline: 1px solid #000;
@@ -73,36 +90,36 @@ nav .row {
   position: relative;
   padding: 5px;
 }
-/* line 20, ../sass/main.scss */
+/* line 44, ../sass/main.scss */
 nav .row h2 {
   position: relative;
   outline: 1px #000 solid;
   display: inline-block;
   padding: 20px;
 }
-/* line 27, ../sass/main.scss */
+/* line 51, ../sass/main.scss */
 nav .row ul {
   position: relative;
   display: inline-block;
   float: right;
 }
-/* line 32, ../sass/main.scss */
+/* line 56, ../sass/main.scss */
 nav .row ul li {
   display: inline-block;
   outline: 1px #000 solid;
 }
-/* line 35, ../sass/main.scss */
+/* line 59, ../sass/main.scss */
 nav .row ul li a {
   text-decoration: none;
   display: block;
   padding: 20px;
 }
-/* line 40, ../sass/main.scss */
+/* line 64, ../sass/main.scss */
 nav .row ul li :hover {
   background-color: blue;
 }
 
-/* line 54, ../sass/main.scss */
+/* line 78, ../sass/main.scss */
 .sub_navigation {
   position: relative;
   width: 100%;
@@ -110,26 +127,26 @@ nav .row ul li :hover {
   margin-top: 120px;
   padding: 30px 0;
 }
-/* line 61, ../sass/main.scss */
+/* line 85, ../sass/main.scss */
 .sub_navigation ul li {
   display: inline;
   padding: 10px;
 }
-/* line 64, ../sass/main.scss */
+/* line 88, ../sass/main.scss */
 .sub_navigation ul li a {
   text-decoration: none;
 }
-/* line 68, ../sass/main.scss */
+/* line 92, ../sass/main.scss */
 .sub_navigation ul li :hover {
   text-decoration: underline;
 }
 
-/* line 76, ../sass/main.scss */
+/* line 100, ../sass/main.scss */
 .grid-container {
   width: 70%;
   margin: 0 auto;
 }
-/* line 82, ../sass/main.scss */
+/* line 106, ../sass/main.scss */
 .grid-container .row .col {
   float: left;
   min-height: 1px;
@@ -137,18 +154,18 @@ nav .row ul li :hover {
   padding: 10px 5px;
   background-color: #fff;
 }
-/* line 89, ../sass/main.scss */
+/* line 113, ../sass/main.scss */
 .grid-container .row .col img {
   max-width: 100%;
   margin: 0 auto;
   display: block;
 }
-/* line 96, ../sass/main.scss */
+/* line 120, ../sass/main.scss */
 .grid-container .row p {
   text-align: center;
   padding: 5px;
 }
-/* line 104, ../sass/main.scss */
+/* line 128, ../sass/main.scss */
 .grid-container .row:before,
 .grid-container .row:after {
   content: "";
@@ -156,12 +173,12 @@ nav .row ul li :hover {
   clear: both;
 }
 
-/* line 114, ../sass/main.scss */
+/* line 138, ../sass/main.scss */
 .outline, .outline * {
   outline: 1px solid #000;
 }
 
-/* line 118, ../sass/main.scss */
+/* line 142, ../sass/main.scss */
 footer {
   padding: 20px 0;
   width: 100%;
@@ -170,23 +187,23 @@ footer {
   text-align: center;
 }
 
-/* line 127, ../sass/main.scss */
+/* line 151, ../sass/main.scss */
 .blue {
   background-color: blue;
   border: 1px solid black;
 }
 
-/* line 132, ../sass/main.scss */
+/* line 156, ../sass/main.scss */
 .green {
   background-color: green;
 }
 
-/* line 136, ../sass/main.scss */
+/* line 160, ../sass/main.scss */
 .red {
   background-color: red;
 }
 
-/* line 140, ../sass/main.scss */
+/* line 164, ../sass/main.scss */
 .clear {
   clear: both;
 }

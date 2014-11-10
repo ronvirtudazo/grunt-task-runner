@@ -1,5 +1,29 @@
 @import "reset";
 
+@font-face {
+
+    font-family: 'Quicksand-Regular';
+
+    src: url('../fonts/Quicksand-Regular.otf');
+
+    font-weight: normal;
+
+    font-style: normal;
+
+
+
+}
+
+body{
+    font-family: "Quicksand-Regular"
+}
+
+@media only screen and (max-device-width: 480px) {
+    .logo{
+        display: none;
+    }
+}
+
 nav{
     width: 100%;
     box-shadow: 0 0 15px #ddd;
